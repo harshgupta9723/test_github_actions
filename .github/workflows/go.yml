@@ -1,4 +1,4 @@
-name: Go
+name: Build go binaries
 
 on:
   push:
@@ -8,13 +8,15 @@ on:
 
 jobs:
 
+  # The “build” workflow 
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@master
 
     - name: Set up Go
-      uses: actions/setup-go@v2
+      uses: actions/setup-go@master
       with:
         go-version: 1.15
 
