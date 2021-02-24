@@ -8,7 +8,7 @@ on:
 
 jobs:
 
-  # The “build” workflow 
+  # The “build” workflow
   build:
     runs-on: ubuntu-latest
     steps:
